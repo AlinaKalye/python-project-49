@@ -8,3 +8,4 @@ coverage.xml
 .pytest_cache/
 .vim
 prompt
+brain_games/scripts/__pycache__/brain_games.cpython-311.pyc
