@@ -7,7 +7,6 @@ def calculate(name):
     print('What is the result of the expression?')
     i = 1
     value = 0
-    # THREE_TIMES = 3
     while i <= THREE_TIMES:
         value1 = randint(1, 10)
         value2 = randint(1, 10)
