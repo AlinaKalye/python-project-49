@@ -29,6 +29,5 @@ def calculate(name):
             i += 1
         else:
             wrong_answer(name, answer, value)
-            break
-        # if i > THREE_TIMES:
-        print(f"Congratulations, {name}!")
+            return
+    print(f"Congratulations, {name}!")

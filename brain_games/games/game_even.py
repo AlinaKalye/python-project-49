@@ -26,5 +26,5 @@ def is_even(name):
             i += 1
         else:
             wrong_answer(name, answer, wright_answer)
-            break
-        print(f"Congratulations, {name}!")
+            return
+    print(f"Congratulations, {name}!")

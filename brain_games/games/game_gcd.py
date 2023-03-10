@@ -20,6 +20,5 @@ def find_greatest_common_divisor(name):
             i += 1
         else:
             wrong_answer(name, answer, value)
-            break
-        if i > THREE_TIMES:
-            print(f"Congratulations, {name}!")
+            return
+    print(f"Congratulations, {name}!")
