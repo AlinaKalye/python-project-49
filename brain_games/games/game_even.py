@@ -13,7 +13,6 @@ def check_wright_answer(value, wright_value):
 def is_even(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 1
-    # THREE_TIMES = 3
     wright_answer = ''
     while i <= THREE_TIMES:
         value = randint(1, 100)
@@ -28,5 +27,4 @@ def is_even(name):
         else:
             wrong_answer(name, answer, wright_answer)
             break
-        if i > THREE_TIMES:
-            print(f"Congratulations, {name}!")
+        print(f"Congratulations, {name}!")

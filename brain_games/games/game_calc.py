@@ -12,15 +12,16 @@ def calculate(name):
         value2 = randint(1, 10)
         operator = randint(1, 3)
         question = ''
-        if operator == 1:
-            value = value1 + value2
-            question = f'{value1} + {value2}'
-        if operator == 2:
-            value = value1 - value2
-            question = f'{value1} - {value2}'
-        if operator == 3:
-            value = value1 * value2
-            question = f'{value1} * {value2}'
+        match operator:
+            case 1:
+                value = value1 + value2
+                question = f'{value1} + {value2}'
+            case 2:
+                value = value1 - value2
+                question = f'{value1} - {value2}'
+            case 3:
+                value = value1 * value2
+                question = f'{value1} * {value2}'
         ask_question(question)
         answer = take_answer()
         if answer == str(value):
@@ -29,5 +30,5 @@ def calculate(name):
         else:
             wrong_answer(name, answer, value)
             break
-        if i > THREE_TIMES:
-            print(f"Congratulations, {name}!")
+        # if i > THREE_TIMES:
+        print(f"Congratulations, {name}!")
